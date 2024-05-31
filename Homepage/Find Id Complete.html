@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .h2_1{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            float: left;
+            margin: 20px 220px 0 0;
+        }
+        .li1{
+            margin: 0 20px 0 20px;
+            list-style-type: none;
+            display: inline;
+        }
+        .ul1{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            float: right;
+            margin: 20px 20px 0 0;
+        }
+        a{
+            color: black;
+            text-decoration-line: none;
+        }
+        #div1{
+            border: solid 3px black;
+            margin: 100px 0 0 0;
+        }
+        #div2{
+            background-color: rgb(175, 175, 249);
+            border: solid 1px black;
+            text-align: center;
+            width: 1000px;
+            height: 250px;
+            margin-bottom: 20px;
+        }
+        #div3{
+            background-color: rgb(175, 175, 249);
+            border: solid 1px black;
+            width: 1000px;
+            height: 250px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        #h2_2{
+            margin-top: 80px;
+            color: rgb(49, 49, 147);
+        }
+        #div4{
+            display: flex;
+            align-items: center;
+            margin:60px 0 40px 0;
+        }
+        #div5{
+            display: flex;
+            align-items: center;
+        }
+        #div6{
+            display: flex;
+            align-items: center;
+            border: solid 1px black;
+            background-color: rgb(175, 175, 249);
+            width: 1000px;
+            height: 100px;
+        }
+        h4{
+            font-size: 18px;
+            color: gray;
+            margin: 0 0 0 330px;
+        }
+        p{  
+            font-weight: bold;
+            margin: 0 0 0 20px;
+        }
+        #inputtype1{
+            margin-left: 355px;
+        }
+        #div7{
+            display: flex;
+            justify-content: center;
+            width: 1000px;
+            height: 150px;
+        }
+        .login{
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 1px black;
+            margin: 75px 30px 0 0;
+            width: 150px;
+            height: 75px;
+        }
+        .login1{
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 1px black;
+            margin: 75px 0 0 30px;
+            width: 150px;
+            height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="Homepage.html"><h2 class="h2_1">Music Pioneer</h2></a>
+        <ul class="ul1">
+            <a href="Menu.html"><li class="li1">Company</li></a>
+            <a href="Menu.html"><li class="li1">News</li></a>
+            <a href="Menu.html"><li class="li1">Recruit</li></a>
+            <a href="Menu.html"><li class="li1">Contact</li></a>
+            <a href="Menu.html"><li class="li1">Investors</li></a>
+        </ul>
+    </div>
+    <div id="div1">
+        <div id="div2">
+            <h2 id="h2_2">아이디 찾기가 완료되었습니다.</h2>
+            <h3>가입된 아이디가 총 1개 있습니다.</h3>
+        </div>
+        <div id="div3">
+            <div id="div4">
+                <h4>이 름</h4><p>최진형</p>
+            </div>
+            <div id="div5">
+                <h4>이메일</h4><p>wkqvlwl321@gmail.com</p>
+            </div>    
+        </div>
+        <div id="div6">
+            <input type="radio" checked id="inputtype1"> <p>wkqvlwl321 (2023-09-11 가입)</p>
+        </div>
+        <div id="div7">
+            <div class="login" onclick="location.href='Login.html'">로그인</div>
+            <div class="login1" onclick="location.href='Find Password.html'">비밀번호 찾기</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        section {
+            float: left;
+            padding: 200px 10px 10px 500px;
+        }
+        #table1 {
+            text-align: right;
+            margin-left: 20px;
+        }
+        #table2{
+            text-align: right;
+        }
+        ul{
+            border: solid 1px black;
+            border-top-width: 10px;
+            margin: 10px 0 10px 20px;
+            padding: 10px 0px 10px 30px;
+            width: 330px;
+        }
+        input {
+            width: 250px;
+            height: 30px;
+        }
+        aside {
+            float: right;
+            padding: 0px 500px 10px 0px
+        }
+        .button{
+            background-color: black;
+            color: white;
+            padding: 10px 20px 10px 20px;
+        }
+        #red{
+            color: red;
+        }
+        #underline{
+            text-decoration: underline;
+        }
+        .p{
+            margin-left: 120px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .p1{
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+        #checkbox{
+            margin: 10px 10px 0px 120px;
+            width: 20px;
+            height: 20px;
+        }
+        footer{
+            clear: both;
+            margin-top: 50px;
+            padding-top: 50px;
+        }
+        hr{
+            background-color: rgb(158, 158, 158);
+            width: 80%;
+            height: 1px;
+        }
+        a{
+            color: black;
+        }
+        select{
+            width: 250px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h3>계정 생성</h3>
+        <table id="table1">
+            <tr>
+                <td><b>이메일 주소</b></td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>아이디</b></td>
+                <td>:</td>
+                <td><input type="text"></td>
+                <td><button>중복확인</button></td>
+            </tr>
+            <tr>
+                <td><b>암호</b></td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        
+        <ul>
+            <li>암호는 8자 이상이어야 합니다.</li>
+            <li>암호는 18자를 초과할 수 없습니다.</li>
+            <li>암호에는 최소한 대문자 하나와 소문자<br>
+                하나가 포함되어야 합니다.
+            </li>
+        </ul>
+
+        <table id="table2">
+            <tr>
+                <td><b>암호 재입력</b></td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>성명</b></td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>거주 국가/지역</b></td>
+                <td>:</td>
+                <td>
+                    <select>
+                        <option>-선택-</option>
+                        <option>한국</option>
+                        <option>일본</option>
+                        <option>미국</option>
+                        <option>중국</option>
+                        <option>직접입력</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>휴대폰</b></td>
+                <td>:</td>
+                <td><input type="text"></td>
+                <td><button>본인인증</button></td>
+            </tr>
+        </table>
+        <p class="p">이용약관 : <span id="underline"><a href="개인정보 수집.html"> 개인정보 수집 및 이용에 대한 동의</a></span><span id="red">(필수)</span></p>
+        <p class="p1"><input type="checkbox" id="checkbox">광고성/채용/오디션 수신정보 제공에 동의하십니까?</p>
+        <p class="p"><a href="Create Complete.html"><button type="button" class="button">계정 생성</button></a></p>
+    </section>
+    <aside>
+        <img src="img/New Account.png" width="900" height="900">
+    </aside>
+    <footer>
+        <hr>
+    </footer>
+</body>
+
+</html>
