@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .border{
+            background-color: #CCCCCC;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            margin: 0 20px 0 20px;
+        }
+        h3{
+            color: rgb(155, 155, 155);
+            font-size: 40px;
+            margin: 10px 0 110px 0;
+        }
+        h4{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 200px;
+        }
+        p{
+            color: rgb(77, 77, 77);
+            font-size: 25px;
+            font-weight: 600;
+        }
+        #div_news{
+            margin: 50px 0 500px 0;
+            display: flex;
+        }
+        hr{
+            margin-top: 30px;
+            width: 1500px;
+            background-color: gray;
+        }
+
+        .h2_1{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            float: left;
+            margin: 20px 220px 0 0;
+        }
+        .li1{
+            margin: 0 20px 0 20px;
+            list-style-type: none;
+            display: inline;
+        }
+        .ul1{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            float: right;
+            margin: 20px 20px 0 0;
+        }
+        a{
+            color: black;
+            text-decoration-line: none;
+        }
+        #footer{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .pointer_margin{
+            margin: 0 15px 0 15px;
+        }
+        #h5_1{
+            border: solid 1px black;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            margin: 0 10px 0 10px;
+            color: white;
+            background-color: black;
+        }
+        .h5_2{
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            margin: 0 10px 0 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <a href="index.html"><h2 class="h2_1">Music Pioneer</h2></a>
+        <ul class="ul1">
+            <a href="Menu.html"><li class="li1">Company</li></a>
+            <a href="Menu.html"><li class="li1">News</li></a>
+            <a href="Menu.html"><li class="li1">Recruit</li></a>
+            <a href="Menu.html"><li class="li1">Contact</li></a>
+            <a href="Menu.html"><li class="li1">Investors</li></a>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div id="div_news">
+
+    <div class="border" OnClick = "location.href ='News1.html'">
+        <h3>News</h3>
+        <h4>김봉중<br>'파도'<br>신곡 발매</h4>
+        <p>2037-05-26</p>
+    </div>
+
+    <div class="border">
+        <h3>News</h3>
+        <h4>김남국<br>'스크립트 행복해'<br>빌보드 4주 연속 1위</h4>
+        <p>2037-03-07</p>
+    </div>
+
+    <div class="border">
+        <h3>News</h3>
+        <h4>대표 최진형<br>탄신일 기념<br>이벤트</h4>
+        <p>2037-02-25</p>
+    </div>
+
+    </div>
+
+    <hr>
+
+    <div id="footer">
+        <img src="img/Left Pointer.png" width="20px" height="20px">
+        <img src="img/Left Pointer.png" width="20px" height="20px">
+        <img src="img/Left Pointer.png" width="20px" height="20px" class="pointer_margin">
+        <h5 id="h5_1">1</h5>
+        <h5 class="h5_2">2</h5>
+        <h5 class="h5_2">3</h5>
+        <img src="img/Right Pointer.png" width="20px" height="20px" class="pointer_margin">
+        <img src="img/Right Pointer.png" width="20px" height="20px">
+        <img src="img/Right Pointer.png" width="20px" height="20px">
+    </div>
+    
+</body>
+</html>
