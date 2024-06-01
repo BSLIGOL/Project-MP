@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a{
+            color: black;
+            text-decoration-line: none;
+        }
+        .h2_1{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            float: left;
+            margin: 20px 220px 0 0;
+        }
+        .li1{
+            margin: 0 20px 0 20px;
+            list-style-type: none;
+            display: inline;
+        }
+        .ul1{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            float: right;
+            margin: 20px 20px 0 0;
+        }
+        h1{
+            margin: 100px 700px 0 0;
+            background-color: rgb(224, 224, 224);
+        }
+        .div{
+            display: flex;
+            margin: 50px 0;
+        }
+        .div1{
+            display: flex;
+            margin: 0 40px 0 0;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: rgb(224, 224, 224);
+            height: 30px;
+        }
+        hr{
+            background-color: black;
+            width: 1000px;
+            border: solid 1px black;
+        }
+        #p1{
+            display : flex;
+            justify-content : center;
+            align-items : center;
+            font-weight: bold;
+            width: 250px;
+            height: 80px;
+            border: solid 1px black;
+        }
+        .p2{
+            font-size: 12px;
+            margin: 0 0 0 0;
+        }
+        .p3{
+            display : flex;
+            justify-content : center;
+            align-items : center;
+            width: 300px;
+            height: 100px;
+            color: white;
+            background-color: black;
+            font-size: 24px;
+        }
+        .td{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .td2{
+            font-size: 12px;
+        }
+        span{
+            background-color: rgb(224, 224, 224);    
+        }
+        select{
+            font-size: 16px;
+            width: 200px;
+            height: 40px;
+        }
+        td{
+            padding: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="index.html"><h2 class="h2_1">Music Pioneer</h2></a>
+        <ul class="ul1">
+            <a href="Menu.html"><li class="li1">Company</li></a>
+            <a href="Menu.html"><li class="li1">News</li></a>
+            <a href="Menu.html"><li class="li1">Recruit</li></a>
+            <a href="Menu.html"><li class="li1">Contact</li></a>
+            <a href="Menu.html"><li class="li1">Investors</li></a>
+        </ul>
+    </div>
+
+    <h1>E-Mail & Homepage Audition</h1>
+
+    <div class="div">
+        <div class="div1">
+            E-mail
+        </div>
+        <div>
+            <hr>
+            <p id="p1">wkqvlwl321@gmail.com</p>
+            <p class="p2"><span>제목은 반드시 이름/나이/성별/지원분야로해주세요.</span></p>
+            <p class="p2"><span>본인의 음성을 녹음한 음악파일이나 춤 추는 장면을 촬영한 동영상, 포토샵 등으로 수정하지 않은 얼굴 정면 사진을 반드시</span></p>
+            <p class="p2"><span>첨부해주세요</span></p>
+        </div>
+    </div>
+
+    <div class="div">
+        <div class="div1">
+            <span>Homepage</span>
+        </div>
+        <div>
+            <hr>
+            <table>
+                <tr>
+                    <td class="td">오디션 종류</td>
+                    <td>
+                        <select>
+                            <option>보컬</option>
+                            <option>댄스</option>
+                            <option>악기</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td">성별</td>
+                    <td><input type="radio">남자<input type="radio">여자</td>
+                </tr>
+                <tr>
+                    <td class="td">사진/동영상<br>첨부</td>
+                    <td><input type="file"></td>
+                    <td class="td2"><span>최대용량은 100MB입니다.(JPG,GIF,PNG,MP4,WMV,AVI)</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <a href="Audition_Complete.html"><p class="p3">지원하기</p></a>
+
+</body>
+</html>
