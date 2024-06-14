@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        body{
-            background-image: url(img/Homepagee.png);
+        body {
+            background-image: url('img/Homepagee.png');
             background-position: center;
             background-size: cover;
-	        background-attachment: fixed;
+            background-attachment: fixed;
             font-family: Copperplate, Papyrus, fantasy;
         }
-        #menu0{
+        #menu0 {
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             float: right;
             font-size: 35px;
@@ -18,7 +18,7 @@
             list-style-type: none;
             font-weight: bold;
         }
-        .menu{
+        .menu {
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             color: yellow;
             display: inline;
@@ -26,25 +26,80 @@
             font-size: 35px;
             font-weight: bold;
         }
-        .menu1{
+        .menu1 {
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-            float:left;
-            color:yellow;
+            float: left;
+            color: yellow;
             margin-left: 30px;
         }
-        .menu2{
+        .menu2 {
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-            float:right;
-            color:yellow;
+            float: right;
+            color: yellow;
             margin-right: 30px;
             text-decoration: underline;
         }
-        footer{
+        footer {
             margin-top: 1180px;
         }
-        a{
+        a {
             color: yellow;
             text-decoration-line: none;
+        }
+        .video-overlay {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-overlay img {
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 700px;
+            background-color: black;
+            padding: 0;
+        }
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal-content iframe {
+            width: 100%;
+            height: 400px;
         }
     </style>
 </head>
@@ -61,9 +116,33 @@
             <li id="menu0"><a href="Login.html">Login</a></li>
         </ul>
     </header>
+
+    <div class="video-overlay" onclick="openModal()">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/play-button-circled.png" alt="Play">
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
     <footer>
-        <div class="menu1">MP.All Rights Reserved</div>
+        <div class="menu1">MP. All Rights Reserved</div>
         <div class="menu2">개인정보처리방침</div>
     </footer>
+
+    <script>
+        function openModal() {
+            document.getElementById("videoModal").style.display = "block";
+            document.getElementById("videoFrame").src = "https://www.youtube.com/embed/4iFP_wd6QU8?si=8sAIQbXSSHfSGVfI";
+        }
+
+        function closeModal() {
+            document.getElementById("videoModal").style.display = "none";
+            document.getElementById("videoFrame").src = "";
+        }
+    </script>
 </body>
 </html>
